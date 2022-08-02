@@ -1,0 +1,7 @@
+extends layout
+ 
+block layout-content
+	h1 Crypto live rates
+	block layout-content
+		each e in exchange_rates
+			div #{e}

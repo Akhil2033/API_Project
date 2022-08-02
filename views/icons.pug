@@ -1,0 +1,8 @@
+extends layout
+
+block layout-content
+	h1 Using an API
+	block layout-content
+	ul 
+		each i in icons
+			<img src="#{i.url}" alt="Logo of a crypto" width="100" >

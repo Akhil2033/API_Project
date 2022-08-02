@@ -1,0 +1,12 @@
+extends layout
+ 
+block layout-content
+	h1 Crypto live rates
+	block layout-content
+	div.all
+		each a in assets
+			if  a.type_is_crypto && (a.price_usd)
+				div#assests 
+					div #{a.name} 
+					div (#{a.asset_id})
+					div #{a.price_usd}

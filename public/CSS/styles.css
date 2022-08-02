@@ -1,0 +1,33 @@
+#main-navigation ul {
+    display:flex;
+    flex-direction:row;
+    list-style-type:none;
+    justify-content: space-evenly;
+}
+
+/* ul {
+    display: inline-block;
+    display: inline;
+    zoom: 1
+} */
+.all {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem;
+    grid-template-rows: 10rem 10rem;
+    justify-content: space-evenly;
+}
+#assests {
+    border: 1px solid black;
+    width: 20em;
+    padding: 1em;
+    margin: 1em;
+}
+
+#footer {
+    display: flex;
+}
+
+
+
+
