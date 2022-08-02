@@ -39,7 +39,12 @@ app.listen(port, () => {
     console.log(`Listening on http://localhost:${port}`);
 });
 
-
+/**
+ * Function to make a request to retrieve Current crypto rates
+ * then render on the page.
+ * 
+ * @param {Response} res The Response for the page to be used for rendering.
+ */
 function getCoinInfo(res) {
     axios(
         {
@@ -59,6 +64,13 @@ function getCoinInfo(res) {
     });
 }
 
+/**
+ * Function to make a request to retrieve exchange rate api for currency
+ * then render on the page.
+ * 
+ * @param {Response} res The Response for the page to be used for rendering.
+ */
+
 function getEx(res) {
     axios(
         {
@@ -74,14 +86,7 @@ function getEx(res) {
 }
 
 
-axios.get('https://exchange-rates.abstractapi.com/v1/live/?api_key=376996028ffb4393b6b166f6585761a0&base=USD')
-    .then(response => {
-        console.log(response.data);
-    })
-    .catch(error => {
-        console.log(error);
-    });
-
+// TRIED TO RENDER MULTIPLE API END POINTS WILL TRY AGAIN IN THE FUTURE
 // function getCoinIcons(res) {
 //     axios(
 //         {
